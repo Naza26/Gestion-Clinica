@@ -47,7 +47,7 @@ Una instrucción se compone de un comando y sus parámetros. El formato siempre 
   Los valores válidos para URGENCIA son: URGENTE o REGULAR.
   
  Salida:
- ´´´
+ ```
     Paciente NOMBRE_PACIENTE encolado
     N paciente(s) en espera para NOMBRE_ESPECIALIDAD
  ```
@@ -56,19 +56,22 @@ Una instrucción se compone de un comando y sus parámetros. El formato siempre 
  Se recibe el nombre del doctor que quedó libre, y este atiende al siguiente paciente urgente (por orden de llegada). Si no hubiera ningún paciente urgente, atiende al siguiente paciente con mayor antigüedad como paciente en la clínica.
  
  Formato:
- ´´´
+ ```
      ATENDER_SIGUIENTE:NOMBRE_DOCTOR
  ```
+ 
  Salida si se atendió a un paciente:
- ´´´
+ 
+ ```
     Se atiende a NOMBRE_PACIENTE
     N paciente(s) en espera para NOMBRE_ESPECIALIDAD
- ´´´
+ ```
+ 
  Salida si no había previamente pacientes en la lista de espera:
  
- ´´´
+ ```
      No hay pacientes en espera
- ´´´
+ ```
  
  # Informe Doctores
  
@@ -77,24 +80,26 @@ Una instrucción se compone de un comando y sus parámetros. El formato siempre 
  
  Formato:
  
- ´´´
+ ```
      INFORME:[INICIO],[FIN]
- ´´´
+ ```
+ 
  En caso de no quererse indicar un inicio o fin, simplemente se deja vacío, por ejemplo:
- ´´´
+ 
+ ```
     INFORME:Gonzalez,Gutierrez
     INFORME:,Gutierrez
     INFORME:Gonzalez,
     INFORME:,
- ´´´
+ ```
  Salida (N + 1líneas, donde N es el número de doctores en el sistema que se encuentran en dicho rango):
- ´´´
+ ```
     N doctor(es) en el sistema
     1: NOMBRE, especialidad ESPECIALIDAD, X paciente(s) atendido(s)
     2: NOMBRE, especialidad ESPECIALIDAD, Y paciente(s) atendido(s)
     ...
     N: NOMBRE, especialidad ESPECIALIDAD, Z paciente(s) atendido(s)
- ´´´
+ ```
  
 
  
