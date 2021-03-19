@@ -100,7 +100,9 @@ Una instrucción se compone de un comando y sus parámetros. El formato siempre 
     ...
     N: NOMBRE, especialidad ESPECIALIDAD, Z paciente(s) atendido(s)
  ```
- 
+# Colaboración
+
+El desarrollo de este trabajo fue hecho en conjunto con Tomás Bernardotti.
 
  
  
